@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang = "ru">
 <head>
 	<meta charset="utf-8">
 	<meta content="" keywords="">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title></title>
+	<title>Барбершоп Бородинский</title>
 </head>
 <body>
-	
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-navugation">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<div class="index-logo">
+			<img src="img/index-logo.png" width="", height="" alt="Барбершоп Бородинский">
+		</div>		
+		<section class="features">
+			<div class="features-item">
+				<h2 class="features-name">Быстро</h2>
+				<p>Мы делаем свою работу быстро!Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+			</div>
+			<div class="features-item">
+				<h2 class="features-name">Круто</h2>
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае, внешне.</p>
+			</div>
+			<div class="features-item">
+				<h2 class="features-name">Дорого</h2>
+				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+			</div>
+		</section>
+			<div class="index-content">
+				<div class="index-content-left">
+					<h2 class="index-content-title">Новости</h2>
+					<ul class="news-prewiev">
+						<li>
+							<p>Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+							<time datetime="2016-01-11">11 января</time>
+						</li>
+						<li>
+							<p>В нашей команде пополнение, Борис "бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+							<time datetime="2016-01-18">18 января</time>
+						</li>
+						<a href="#" class="btn">Все новости</a>
+					</ul>
+				</div>
+				<div class="index-content-right">
+					<h2 class="index-content-title">Фотогалерея</h2>
+					<div class="gallery">
+						<figure class="gallery-content">
+							<img src="img/photo-1.jpg" width="" height="" alt="">
+						</figure>
+						<button class="btn gallery-prev">Назад</button>
+						<button class="btn gallery-next">Вперед</button>
+					</div>
+				</div>				
+			</div>
+		
+		<div class="index-content">
+				<div class="index-content-left">
+					<h2 class="index-content-title">Контактная информация</h2>
+					<p>
+						Барбершоп Бородинский<br>
+						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+						Телефон: +7 (812) 666-02-66
+					</p>
+					<p>
+						Время работы:<br>
+						пн - пт: с 10:00 до 20:00<br>
+						сб - вс: с 10:00 до 19:00
+					</p>
+					<a href="#" class="btn">Как проехать</a>
+					<a href="#" class="btn">Обратная связь</a>
+				</div>
+				<div class="index-content-right">
+					<h2 class="index-content-title">Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form action="https://echo.htmlacademy.ru" method="post" class="appointment-form">
+						<input type="text" name="date" placeholder="Дата">
+						<input type="text" name="time" placeholder="Время">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="tel" name="phone" placeholder="Телефон">
+						<button class="btn" type="submit">Отправить</button>
+					</form>
+				</div>				
+			</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-contacts">
+				Барбершоп Бородинский<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон: +7 (812) 666-02-66
+			</div>
+			<div class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn social-btn-vk"></a>
+				<a href="#" class="social-btn social-btn-fb"></a>
+				<a href="#" class="social-btn social-btn-inst"></a>
+			</div>
+			<div class="footer-copyright">
+				<p>Разработано:</p>
+				<a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
