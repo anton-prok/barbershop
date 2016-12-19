@@ -13,6 +13,10 @@ body{
 	color: white;
 	background: #000 url("../img/body-img.jpg") no-repeat center top;
 }
+.inner-page{
+	color: #000000;
+	background: #f8f5f2 url("../img/bg.png");
+}
 .clearfix::after{
 	content: "";
 	display: table;
@@ -27,6 +31,22 @@ body{
 	margin-bottom: 60px;
 	color: white;
 	background-color: black;
+}
+.inner-page .main-header{
+	margin-bottom: 55px;
+}
+.main-navigation{
+	min-height: 70px;
+	width: 780px;
+	float: left;
+}
+.main-navigation .menu-logo{	
+	float: left;
+	width: 111px;
+	height: 20px;
+}
+.main-navigation .menu-logo:hover{
+	background: none;
 }
 .main-navigation ul{
 	margin: 0;
@@ -49,11 +69,25 @@ body{
 .main-navigation a:hover{
 	background: #242424;
 }
-
-.main-navigation{
-	min-height: 70px;
-	width: 780px;
-	float: left;
+.main-navigation .active{
+	position: relative;
+	background-color: none;
+}
+.main-navigation .active::after{
+	content: "";
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	left: 20px;
+	right: 20px;
+	bottom: 0px;
+}
+.main-navigation .active a:hover{
+	background: none;
+}
+.main-navigation .active span{
+	display: block;
+	padding: 25px 20px;
 }
 .user-block{
 	max-width: 140px;
@@ -262,6 +296,147 @@ body{
 	border: 2px solid #663d15;
 }
 
+/*Стили внутренних страниц*/
+
+.inner-page-title h1{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 30px;
+	line-height: 42px;
+}
+.breadcrumbs{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.breadcrumbs li{
+	position: relative;
+	display: inline;
+	padding-right: 40px;
+}
+.breadcrumbs li::after{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	top: 4px;
+	right: 18px;
+	transform: rotate(45deg);
+}
+.breadcrumbs .current::after{
+	display: none;
+}
+.breadcrumbs a{
+	color: black;
+	text-decoration: none;
+}
+.breadcrumbs a:hover{
+	text-decoration: underline;
+}
+.breadcrumbs .current{
+	color: #aba9a7;
+}
+.inner-content p{
+	margin: 14px 0;
+}
+.inner-content h2{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.inner-content h3{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.inner-content h2 + h3{
+	margin-top: 30px;
+}
+.inner-content table{
+	border-collapse: collapse;
+}
+.inner-content td{
+	padding: 10px 15px;
+	border: 2px solid black;
+}
+.big-heading{
+	margin-top: 55px;
+	margin-bottom: 65px;
+	text-align: center;
+}
+.big-heading h2{
+	position: relative;
+	display: inline;
+	margin: 0;
+	padding: 0 25px;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+	z-index: 2;
+	background: #f8f3f0 url("../img/bg.png") repeat;
+}
+.big-heading::after{
+	content: "";
+	position: relative;
+	top: -25px;
+	display: block;
+	border-bottom: 3px solid black;
+	z-index: 1;
+}
+.custom-list-1{
+	margin: 14px 0;
+	padding: 0;
+	list-style: none;
+}
+.custom-list-1 li{
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+.custom-list-1 li::before{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	transform: rotate(45deg);
+}
+.prices-table{
+	width: 100%;
+}
+.prices-table td{
+	width: 50%;
+}
+.prices-table td:last-child{
+	text-align: center;
+}
+.inner-columns{
+	margin: 60px 0;
+}
+.inner-column-left,
+.inner-column-right{
+	width: 460px;
+}
+.inner-column-left{
+	float: left;
+}
+.inner-column-right{
+	float: right;
+}
+.inner-column-left *:first-child,
+.inner-column-right *:first-child{
+	margin-top: 0;
+}
+.inner-column-left *:last-child,
+.inner-column-right *:last-child{
+	margin-bottom: 0;
+}
 .main-footer{
 	margin-top: 65px;	
 	padding-top: 60px;
