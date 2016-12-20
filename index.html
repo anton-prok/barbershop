@@ -2,6 +2,7 @@
 <html lang = "ru">
 <head>
 	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,11 +14,11 @@
 			<nav class="main-navigation">
 				<ul>
 					<li><a href="#">Главная</a></li>
-					<li><a href="item.html">Информация</a></li>
-					<li><a href="#">Новости</a></li>
+					<li><a href="item.html">Информация</a></li>					
 					<li><a href="price.html">Прайс-лист</a></li>
 					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#" class="inactive">Новости</a></li>
+					<li><a href="#" class="inactive">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
@@ -114,9 +115,9 @@
 			</div>
 			<div class="footer-social">
 				<p>Давайте дружить!</p>
-				<a href="#" class="social-btn social-btn-vk"></a>
-				<a href="#" class="social-btn social-btn-fb"></a>
-				<a href="#" class="social-btn social-btn-inst"></a>
+				<a href="#" class="social-btn social-btn-vk" title="ВКонтакте"></a>
+				<a href="#" class="social-btn social-btn-fb" title="Facebook"></a>
+				<a href="#" class="social-btn social-btn-inst" title="Instagram"></a>
 			</div>
 			<div class="footer-copyright">
 				<p>Разработано:</p>
@@ -124,5 +125,24 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form action="#" class="login-form" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин">
+			<input type="password" class="icon-password" name="password" placeholder="Пароль">
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox-indicator"></span>Запомните меня
+			</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal-content-map">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex-map"></div>
+	</div>
 </body>
 </html>
