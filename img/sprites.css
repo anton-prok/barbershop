@@ -1,0 +1,58 @@
+.Слой-1, .vk, .Слой-3, .inst, .Слой2, .fb, .user, .locked, ..icon-login{
+	background: url(sprites.png) no-repeat;
+}
+
+.Слой-1{
+	background-position: -12px -17px ;
+	width: 25px;
+	height: 16px;
+}
+
+.vk{
+	background-position: -13px -67px ;
+	width: 25px;
+	height: 16px;
+}
+
+.Слой-3{
+	background-position: -15px -114px ;
+	width: 21px;
+	height: 21px;
+}
+
+.inst{
+	background-position: -15px -164px ;
+	width: 21px;
+	height: 21px;
+}
+
+.Слой2{
+	background-position: -19px -213px ;
+	width: 12px;
+	height: 22px;
+}
+
+.fb{
+	background-position: -19px -264px ;
+	width: 12px;
+	height: 22px;
+}
+
+.user{
+	background-position: -18px -317px ;
+	width: 15px;
+	height: 15px;
+}
+
+.locked{
+	background-position: -17px -366px ;
+	width: 15px;
+	height: 17px;
+}
+
+..icon-login{
+	background-position: -16px -417px ;
+	width: 18px;
+	height: 16px;
+}
+

@@ -78,6 +78,7 @@ body{
 	text-decoration: none;
 	display: block;
 	padding: 25px 20px;
+	transition: all ease 0.2s;
 }
 .main-navigation a:hover{
 	background: #242424;
@@ -124,8 +125,8 @@ body{
 	position: absolute;
 	top: 28px;
 	left: 20px;
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -4px -99px;	
+	background: url("../img/sprites.png") no-repeat;
+	background-position: -16px -418px;	
 	opacity: 0.3;
 }
 .login:hover{
@@ -239,6 +240,7 @@ body{
 	display: inline-block;
 	padding: 10px 33px;
 	margin-right: 16px;
+	transition: all ease 0.2s;
 }
 .btn.disabled,
 .btn:disabled{
@@ -651,6 +653,7 @@ input[type="radio"]{
 	margin-right: 15px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);
+	transition: all ease 0.2s;
 }
 .shop-items li:hover{
 	box-shadow: 0 0 15px 0 rgba(0,0,0,0.6);
@@ -694,15 +697,17 @@ input[type="radio"]{
 }
 .paginator a:hover{
 	background-color:#663d15;
+	transition: all ease 0.2s;
 }
 .paginator .pag-current{
 	background-color: white;
 	color: black;
+	cursor: default;
 }
 .paginator .pag-current:hover{
-	padding: 7px 15px;
-	border: 2px solid black;
 	background-color: white;
+	color: black;
+	cursor: default;
 }
 .main-footer{
 	box-shadow: inset 0 7px 20px rgba(0,0,0,0.6);
@@ -739,7 +744,7 @@ input[type="radio"]{
 	margin: 0 2px;
 	vertical-align: top;
 	text-decoration: none;
-	background: #000000 url("../img/sprite.png") no-repeat center;
+	background: #000000 url("../img/sprites.png") no-repeat center;
 	transition: 
 		background-position 0.5s,
 		background-color 0.5s;
@@ -748,22 +753,22 @@ input[type="radio"]{
 	background-color: white;
 }
 .social-btn-vk{
-	background-position: 8px 14px;
+	background-position: -4px -54px;
 }
 .social-btn-vk:hover{
-	background-position: 8px -286px;
+	background-position: -4px -4px;
 }
 .social-btn-fb{
-	background-position: 8px -137px;
+	background-position: -3px -254px;
 }
 .social-btn-fb:hover{
-	background-position: 10px -387px;
+	background-position: -3px -203px;
 }
 .social-btn-inst{
-	background-position: 10px -36px;
+	background-position: -3px -154px;
 }
 .social-btn-inst:hover{
-	background-position: 8px -336px;
+	background-position: -3px -104px;
 }
 .footer-copyright{
 	width: 180px;
@@ -872,14 +877,14 @@ input[type="radio"]{
 	border-color: #663d15;
 }
 .login-form input.icon-user{
-	background-image: url("../img/sprite.png");
+	background-image: url("../img/sprites.png");
 	background-repeat: no-repeat;
-	background-position: 263px -185px;
+	background-position: 248px -303px;
 }
 .login-form input.icon-password{
-	background-image: url("../img/sprite.png");
+	background-image: url("../img/sprites.png");
 	background-repeat: no-repeat;
-	background-position: 263px -237px;
+	background-position: 249px -353px;
 }
 .login-form .restore{
 	float: right;
