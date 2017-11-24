@@ -229,6 +229,7 @@ body{
 	color: #FFFFFF;
 	background-color: black;
 	border: none;
+	border-radius: 0;
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
